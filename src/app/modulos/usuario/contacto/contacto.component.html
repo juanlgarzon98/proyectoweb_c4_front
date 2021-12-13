@@ -1,0 +1,36 @@
+<main>
+    <div class="ctn-title">
+        <div class="title">
+            <h1>Contactar</h1>
+            <img src="./assets/img/send.png" alt="send">
+        </div>
+        <hr>
+    </div>
+    <div class="ctn-info-contacto">
+        <p>Colocate en contacto con nosotros 
+         Por medio de nuestro formulario.</p>
+        <p>Es muy importante que rellenes 
+         los campos requeridos con tu
+         informacion correcta asi nuestros
+         asesores se podran comunicar 
+         de manera mas eficaz con usted.</p>
+        <p>“Somos Futuro Home”</p>
+    </div>
+    <div class="ctn-form-contacto">
+        <form [formGroup]="fgValidador" (ngSubmit)="EnviarCorreo()">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombres" formControlName="nombres" id="nombre" >
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellidos" formControlName="apellidos" id="apellido" >
+            <br>
+            <label for="email">Correo</label>
+            <input type="email" name="correo" formControlName="correo" id="correo" >
+            <br>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" formControlName="mensaje" cols="30" rows="10"></textarea>
+            <br>
+             <button [disabled]="!fgValidador.valid" class="btn btn-success" type="submit">Enviar</button>
+         </form>
+    </div>
+ </main>

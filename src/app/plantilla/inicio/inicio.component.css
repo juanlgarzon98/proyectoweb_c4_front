@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+:root{
+    --color-gray1:#333333;
+    --color-gray2:#4F4F4F;
+    --color-gray3:#C4C4C4;
+    --color-gray5:#E0E0E0;
+    --color-container:#CACACA;
+    --color-hr:#898989;
+    --color-white:#F2F2F2;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Salsa', cursive;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: inherit;
+}  
+a{
+   text-decoration: none;
+}
+
+
+body{
+    background-color: var(--color-gray5);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: var(--color-gray1);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-white);
+    margin-bottom: 2%;
+}
+header h1{
+    margin-left: 5%;
+}
+
+header nav {
+    width: 40%;
+    font-size: 20px;
+}
+header nav ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+header nav ul li{
+    color: var(--color-white);    
+}
+
+header .icon-ingresar img{
+    width:70%;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40vh;
+    background-color: var(--color-gray1);
+    display: flex;
+    justify-content: space-evenly;
+}
+footer hr {
+    width: 8px;
+    height: 30vh;
+    margin:auto;
+    border-radius: 8px;
+    background-color: var(--color-white);
+}
+footer .redes,
+footer .somos,
+footer .nro-contacto{
+    width:25%;
+    height:30vh;
+    margin:auto 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 30px;
+}
+footer .redes .ctn-icon-redes{
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto 2%;
+}
+.redes .ctn-icon-redes .icon-redes img{
+    width:100%;
+}
+footer .somos h4{
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+footer .nro-contacto .ctn-nro{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-bottom: 2%;  
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .ctn-card-home{
+    width: 50%;
+    height: 80vh;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+main .ctn-nosotros .ctn-title,
+main .ctn-card-home .ctn-title{
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2% auto;
+    color: var(--color-gray1);
+}
+.ctn-nosotros .ctn-title hr,
+.ctn-card-home .ctn-title hr{
+    width: 80%;
+    height: 1vh;
+    
+    background-color: var(--color-gray1);
+}
+.ctn-card-home .ctn-card{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ctn-card-home .ctn-card .card{
+    background-color:var(--color-gray1);
+    width: 40%;
+    height: 50vh;
+    margin: auto;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column
+}
+.ctn-card .card .card-title{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+.card .card-title h3{
+    color: var(--color-white);
+    margin-left: 5%;
+    margin-top:2%;
+}
+.card .card-title hr{
+    width: 60%;
+    height: 1vh;
+    margin-left: 0%;
+    margin-top: 3%;
+    background-color: var(--color-white);
+}
+.ctn-card .card .card-img{
+    background-color: white;
+    width: 100%;
+    height: 25vh;
+}
+.ctn-card .card .card-button{
+    background-color:var(--color-hr);
+    width: 70%;
+    height: 7vh;
+    margin: auto;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-gray1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+main hr {
+    width: 8px;
+    height: 40vh;
+    margin: auto;
+    border-radius: 8px;
+    background-color: var(--color-hr);
+}
+
+main .ctn-nosotros{
+    width: 60%;
+    height: 80vh;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+main .ctn-nosotros .ctn-description{
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+}
+
+.ctn-nosotros{
+    border-style:solid;
+}
+.ctn-nosotros .ctn-description p {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 8%;
+}

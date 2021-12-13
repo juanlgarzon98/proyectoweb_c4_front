@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="">
+        <img src="./assets/img/User.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form autocomplete="off" [formGroup]="fgValidador" (ngSubmit)="Restaurarcontrasena()">
+        <input type="text" id="correo" class="" formControlName="correo" placeholder="Correo">
+        <ngx-recaptcha2
+        #captchaElem
+        [siteKey]="siteKey"
+        formControlName="recaptcha"
+      >
+      </ngx-recaptcha2>
+        <input type="submit" [disabled]="!fgValidador.valid" class="" value="Restaurar contraseña">
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" routerLink="../login">Iniciar sesión</a>
+      </div>
+  
+    </div>
+  </div>

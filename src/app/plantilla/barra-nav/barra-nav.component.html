@@ -1,0 +1,14 @@
+<nav>
+    <div class="nav-wrapper" style="background-color: grey">
+      <a routerlink="" class="brand-logo">FutureHome</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li *ngIf="!seInicioSesion"><a routerLink="inicio">Inicio</a></li>
+        <li *ngIf='seInicioSesion'><a routerLink="inmuebles/listar-inmuebles">Inmuebles</a></li>
+        <li *ngIf='seInicioSesion && sesionRol==="administrador"'><a routerLink="usuario/listar-usuarios">Usuarios</a></li>
+        <li *ngIf="!seInicioSesion"><a routerLink="usuario/contacto">Contacto</a></li>
+        <li *ngIf="!seInicioSesion"><a routerLink="seguridad/login">Iniciar sesión</a></li>
+        <li *ngIf="seInicioSesion"><a routerLink="seguridad/cerrarSesion">Cerrar sesión</a></li>
+        <li *ngIf="!seInicioSesion"><a routerLink="usuario/crear-usuario">Registrarse</a></li>
+      </ul>
+    </div>
+  </nav>

@@ -1,0 +1,98 @@
+<section class="gallery-block cards-gallery">
+    <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-primary btn-lg" routerLink="../crear-usuario">
+        Agregar nuevo inmueble
+    </a>
+        <div class="heading">
+          <h2>Inmuebles</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 transform-on-hover">
+                    <a class="lightbox" href="./assets/img/image1.jpg">
+                        <img src="./assets/img/image1.jpg" alt="Card Image" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h6><a href="#">Apartaestudio con baño y cocina</a></h6>
+                        <p class="text-muted card-text">Villavicencio.</p>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-primary">Editar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-danger" >Eliminar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="cliente"' class="btn" >Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 transform-on-hover">
+                    <a class="lightbox" href="./assets/img/image2.jpg">
+                        <img src="./assets/img/image2.jpg" alt="Card Image" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h6><a href="#">Apartamento 2 piezas</a></h6>
+                        <p class="text-muted card-text">Bogota.</p>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-primary">Editar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-danger" >Eliminar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="cliente"' class="btn" >Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 transform-on-hover">
+                    <a class="lightbox" href="./assets/img/image3.jpg">
+                        <img src="./assets/img/image3.jpg" alt="Card Image" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h6><a href="#">Apartamento 2 habitaciones con cocina</a></h6>
+                        <p class="text-muted card-text">Cali.</p>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-primary">Editar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-danger" >Eliminar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="cliente"' class="btn" >Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 transform-on-hover">
+                    <a class="lightbox" href="./assets/img/image4.jpg">
+                        <img src="./assets/img/image4.jpg" alt="Card Image" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h6><a href="#">Casa en conjunto residencial</a></h6>
+                        <p class="text-muted card-text">Medellin.</p>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-primary">Editar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-danger" >Eliminar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="cliente"' class="btn" >Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 transform-on-hover">
+                    <a class="lightbox" href="./assets/img/image5.jpg">
+                        <img src="./assets/img/image5.jpg" alt="Card Image" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h6><a href="#">Apartaestudio 3 habitaciones, cocina y 1 baño</a></h6>
+                        <p class="text-muted card-text">Medellin.</p>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-primary">Editar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-danger" >Eliminar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="cliente"' class="btn" >Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 transform-on-hover">
+                    <a class="lightbox" href="./assets/img/image6.jpg">
+                        <img src="./assets/img/image6.jpg" alt="Card Image" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h6><a href="#">Habitaciones amobladas</a></h6>
+                        <p class="text-muted card-text">Bogota.</p>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-primary">Editar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="administrador"' class="btn btn-danger" >Eliminar</a>
+                        <a *ngIf='seInicioSesion && sesionRol==="cliente"' class="btn" >Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+    </script>

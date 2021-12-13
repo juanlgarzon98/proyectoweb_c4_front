@@ -1,0 +1,45 @@
+<h3>Usuarios registrados</h3>
+<br>
+<a class="btn btn-primary" routerLink="../crear-usuario">Registrar usuario</a>
+<table class="table responsive">
+<thead>
+<th>Nombres</th>
+<th>Apellidos</th>
+<th>Email</th>
+<th>Contrasena</th>
+<th>Rol</th>
+<th>Telefono</th>
+<th>Confirmado?</th>
+<th>Acciones</th>
+</thead>
+<tbody>
+<tr *ngFor="let p of listadoRegistros">
+    <td>
+    {{p.nombres}}
+    </td>
+    <td>
+    {{p.apellidos}}
+    </td>
+    <td>
+    {{p.email}}
+    </td>
+    <td>
+    {{p.contrasena}}
+    </td>
+    <td>
+    {{p.rol}}
+    </td>
+    <td>
+    {{p.telefono}}
+    </td>                 
+    <td class="text-center">{{p.confirmacion}}</td>
+    <td>
+        <a class="btn btn-primary" routerLink="../editar-usuario/{{p.id}}">Editar usuario</a>
+        <a class="btn btn-danger" routerLink="../eliminar-usuario/{{p.id}}">Eliminar usuario</a>
+    </td>
+
+</tr>
+
+</tbody>
+</table>
+
